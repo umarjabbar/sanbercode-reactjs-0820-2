@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
@@ -35,4 +35,55 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Kotak{
+  width: 40%;
+  margin: 100px auto; 
+  border: 1px solid #000; 
+  border-radius: 20px
+}
+
+.Kotak h1 {
+  text-align: center;
+}
+
+.Konten {
+  padding: 20px; 
+  padding-top: 0px
+}
+
+.Atas {
+  display: block; 
+  margin-bottom: 1em;
+}
+
+.Nama-pelanggan, .Daftar-item{
+  display: inline-block; 
+  width: 150px; 
+  font-weight: bold; 
+  font-size: 16px;
+}
+
+.Input-name {
+  display: inline-block; 
+}
+
+.Bawah {
+  display: block; 
+  margin-bottom: 1em;
+}
+
+.Item-list {
+  display: inline-block;
+}
+
+.Btn-submit {
+  background: white; 
+  border-radius: 20px;
+}
+
+.Btn-submit a {
+  text-decoration: none;
+  color: black;
 }
