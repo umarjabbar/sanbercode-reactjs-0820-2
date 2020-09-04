@@ -87,3 +87,21 @@
   text-decoration: none;
   color: black;
 }
+
+.Judul-table {
+  text-align: center;
+}
+
+table {
+  width: 65%;
+  border: 1px solid black;
+  margin: 0 auto 30px;
+}
+
+table thead {
+  background: rgb(165, 165, 165);
+}
+
+table tbody {
+  background: rgb(255, 112, 60);
+}
