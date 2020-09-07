@@ -1,9 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import UserInfo from './UserInfo.js';
 import Formulir from './Tugas-9/tugas9.js';
 import TableBuah from './Tugas-10/tugas10.js';
+import Timer from './Tugas-11/timer.js';
 
 function App() {
   return (
@@ -22,9 +22,11 @@ function App() {
           Learn React
         </a>
       </header>
-       <UserInfo />
        <Formulir />
        <TableBuah />
+       <div className="tugas-11">
+        <Timer start="100" />
+       </div>
     </div>
   );
 }

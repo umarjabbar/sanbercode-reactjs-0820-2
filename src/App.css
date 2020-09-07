@@ -105,3 +105,35 @@ table thead {
 table tbody {
   background: rgb(255, 112, 60);
 }
+
+/* .container{
+  display: flex;
+} */
+
+.container{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.content {
+  flex: 1;
+  box-sizing: border-box;
+  padding: 7px;
+  border-radius: 12px;
+  border: 1px solid black;
+}
+
+.content .photo {
+  width: 100%;
+  height: 175px;
+  background-position: center;
+  background-size: cover;
+}
+
+.tugas-11{
+  margin-top: 17px;
+  display: flex;
+  justify-content: space-around;
+  background: rgb(204, 204, 204);
+}
