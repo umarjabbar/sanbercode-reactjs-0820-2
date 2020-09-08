@@ -27,12 +27,12 @@ class Clock extends React.Component {
     let detik = hari.getSeconds();
     let format;
     
-    if (jam == 0) jam = jam + 12;
-    if (jam > 12) jam = jam - 12; format = "AM";
-    if (jam < 10) jam = "0" + jam;
-    if (jam <= 12) format = "PM";
-    if (menit < 10) menit = "0" + menit;
-    if (detik < 10) detik = "0" + detik;
+    if (jam == 0) { jam = jam + 12 }
+    else if (jam <= 12) {format = "AM" }
+    else if (jam > 12) { jam = jam - 12; format = "PM"}
+    if (jam < 10) { jam = "0" + jam}
+    if (menit < 10) { menit = "0" + menit}
+    if (detik < 10) { detik = "0" + detik}
 
     let output = `${jam}:${menit}:${detik} ${format}`;
     this.setState(() => ({
