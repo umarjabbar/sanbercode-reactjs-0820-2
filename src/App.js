@@ -4,11 +4,16 @@ import './App.css';
 import Formulir from './Tugas-9/tugas9.js';
 import TableBuah from './Tugas-10/tugas10.js';
 import Timer from './Tugas-11/timer.js';
+import ListForm from './Tugas-12/tugas12.js';
+import MateriListForm from './Tugas-12/materi.js';
+import Event from './latihan/event.js';
+import Form from './latihan/form.js';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -21,12 +26,17 @@ function App() {
         >
           Learn React
         </a>
-      </header>
-       <Formulir />
+      </header> */}
+       {/* <Formulir />
        <TableBuah />
        <div className="tugas-11">
         <Timer start="100" />
        </div>
+      */}
+      {/* <MateriListForm /> 
+      <Event />
+      <Form /> */}
+       <ListForm />
     </div>
   );
 }
