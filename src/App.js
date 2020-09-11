@@ -8,6 +8,8 @@ import ListForm from './Tugas-12/tugas12.js';
 import MateriListForm from './Tugas-12/materi.js';
 import Event from './latihan/event.js';
 import Form from './latihan/form.js';
+import Example from './latihan/hooks.js'
+import Hooks from './Tugas-13/tugas13.js'
 
 
 function App() {
@@ -35,8 +37,10 @@ function App() {
       */}
       {/* <MateriListForm /> 
       <Event />
-      <Form /> */}
+      <Form />
        <ListForm />
+       <Example /> */}
+       <Hooks />
     </div>
   );
 }
