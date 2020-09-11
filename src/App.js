@@ -10,6 +10,8 @@ import Event from './latihan/event.js';
 import Form from './latihan/form.js';
 import Example from './latihan/hooks.js'
 import Hooks from './Tugas-13/tugas13.js'
+import Movie from './Tugas-14/movie.js'
+import Buah from './Tugas-14/buah'
 
 
 function App() {
@@ -39,8 +41,11 @@ function App() {
       <Event />
       <Form />
        <ListForm />
-       <Example /> */}
+       <Example />
        <Hooks />
+      <Movie />
+        */}
+        <Buah />
     </div>
   );
 }
