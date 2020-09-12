@@ -1,5 +1,4 @@
 import React from 'react';
-
 function Formulir () {
   return (
     <div className="Kotak">

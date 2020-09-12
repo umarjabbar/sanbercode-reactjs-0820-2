@@ -9,7 +9,6 @@ class ListForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      index: props.key,
       buah: [
         {nama: "Semangka", harga: 10000, berat: 1000},
         {nama: "Anggur", harga: 40000, berat: 500},
@@ -18,8 +17,8 @@ class ListForm extends React.Component {
         {nama: "Mangga", harga: 30000, berat: 500}
       ],
       nama: "",
-      harga: null,
-      berat: null,
+      harga: "",
+      berat: "",
     }
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -34,7 +33,10 @@ class ListForm extends React.Component {
     event.preventDefault();
     let input = {nama: this.state.nama, harga: this.state.harga, berat: this.state.berat}
     this.setState({
-        buah: [...this.state.buah, input]
+        buah: [...this.state.buah, input],
+        nama: "",
+        harga: "",
+        berat: ""
     })
   }
 
@@ -97,17 +99,19 @@ class ListForm extends React.Component {
             })}
           </tbody>
         </table>
-
-        <h1>Tambah Buah</h1>
-        <form onSubmit={this.handleSubmit}>
-          <label>Nama : </label>
-          <input onChange={this.handleNama} value={this.state.nama}/><br/>
-          <label>Harga : </label>
-          <input type="number" onChange={this.handleHarga} value={this.state.harga}/><br/>
-          <label>Berat : </label>
-          <input type="number" onChange={this.handleBerat} value={this.state.berat}/><br/>
-          <button>Tambah</button>
-        </form>
+        
+        <div className="tugas-12">
+          <h1>Tambah Buah</h1>
+          <form onSubmit={this.handleSubmit}>
+            <label>Nama : </label>
+            <input onChange={this.handleNama} value={this.state.nama}/><br/>
+            <label>Harga : </label>
+            <input onChange={this.handleHarga} value={this.state.harga}/><br/>
+            <label>Berat : </label>
+            <input onChange={this.handleBerat} value={this.state.berat}/><br/>
+            <button>Tambah</button>
+          </form>
+        </div>
 
       </>
     )

@@ -5,6 +5,7 @@ import {DaftarBuahContext} from "./ContextBuah"
 const DaftarBuahList = () =>{
 
   const [daftarBuah, setDaftarBuah] = useContext(DaftarBuahContext)
+  console.log(daftarBuah)
 
   useEffect( () => {
     if (daftarBuah.lists === null){
@@ -45,7 +46,7 @@ const DaftarBuahList = () =>{
 
   return(
     <>
-      <h1>Daftar Harga Buah</h1>
+      <h1 className="text-center">Daftar Harga Buah</h1>
       <table>
         <thead>
           <tr>

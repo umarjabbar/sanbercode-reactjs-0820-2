@@ -78,9 +78,9 @@ const DaftarBuahForm = () =>{
   }
   return(
     <>
-      <h1>Form Daftar Harga Buah</h1>
+      <h1 className="text-center">Form Daftar Harga Buah</h1>
 
-      <div style={{width: "50%", margin: "0 auto", display: "block"}}>
+      <div style={{width: "30%", margin: "0 auto", display: "block"}}>
         <div style={{border: "1px solid #aaa", padding: "20px"}}>
           <form onSubmit={handleSubmit}>
             <label style={{float: "left"}}>
